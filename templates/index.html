@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rule Engine</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Rule Engine</h1>
+
+        <section class="rule-creation">
+            <h2>Create Rule</h2>
+            <textarea id="ruleInput" rows="3" placeholder="Enter rule string"></textarea>
+            <button id="createRuleBtn">Create Rule</button>
+        </section>
+
+        <section class="rule-combination">
+            <h2>Combine Rules</h2>
+            <div id="ruleList"></div>
+            <button id="addRuleBtn">Add Rule</button>
+            <button id="combineRulesBtn">Combine Rules</button>
+        </section>
+
+        <section class="rule-evaluation">
+            <h2>Evaluate Rule</h2>
+            <textarea id="dataInput" rows="5" placeholder="Enter JSON data"></textarea>
+            <button id="evaluateRuleBtn">Evaluate Rule</button>
+        </section>
+
+        <section class="rule-display">
+            <h3>AST (JSON format):</h3>
+            <pre id="astOutput"></pre>
+        </section>
+
+        <div id="evaluationResult" class="evaluation-result"></div>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
